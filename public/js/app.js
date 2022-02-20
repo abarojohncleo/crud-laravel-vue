@@ -5433,7 +5433,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    this.axios.get('https://fierce-fortress-91957.herokuapp.com/api/products/').then(function (response) {
+    this.axios.get('https://fierce-fortress-91957.herokuapp.com/api/products').then(function (response) {
       _this.products = response.data;
     });
   },
