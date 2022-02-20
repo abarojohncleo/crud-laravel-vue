@@ -37,7 +37,7 @@
         },
         created() {
             this.axios
-                .get('https://fierce-fortress-91957.herokuapp.com/api/products/')
+                .get('https://fierce-fortress-91957.herokuapp.com/api/products')
                 .then(response => {
                     this.products = response.data;
                 });
