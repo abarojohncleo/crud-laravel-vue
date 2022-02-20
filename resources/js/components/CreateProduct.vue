@@ -29,7 +29,7 @@
         methods: {
             addProduct() {
                 this.axios
-                    .post('http://localhost:8000/api/products', this.product)
+                    .post('https://fierce-fortress-91957.herokuapp.com/api/products', this.product)
                     .then(response => (
                         this.$router.push({ name: 'home' })
                     ))
