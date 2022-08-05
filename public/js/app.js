@@ -5433,7 +5433,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    this.axios.get('https://fierce-fortress-91957.herokuapp.com/api/products').then(function (response) {
+    this.axios.get('https://crud-laravel-vue-john-abaro.herokuapp.com/api/products').then(function (response) {
       _this.products = response.data;
     });
   },
@@ -5441,7 +5441,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteProduct: function deleteProduct(id) {
       var _this2 = this;
 
-      this.axios["delete"]("https://fierce-fortress-91957.herokuapp.com/api/products/".concat(id)).then(function (response) {
+      this.axios["delete"]("https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/".concat(id)).then(function (response) {
         var i = _this2.products.map(function (data) {
           return data.id;
         }).indexOf(id);
@@ -5496,7 +5496,7 @@ __webpack_require__.r(__webpack_exports__);
     addProduct: function addProduct() {
       var _this = this;
 
-      this.axios.post('https://fierce-fortress-91957.herokuapp.com/api/products', this.product).then(function (response) {
+      this.axios.post('https://crud-laravel-vue-john-abaro.herokuapp.com/api/products', this.product).then(function (response) {
         return _this.$router.push({
           name: 'home'
         });
@@ -5552,7 +5552,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    this.axios.get("https://fierce-fortress-91957.herokuapp.com/api/products/".concat(this.$route.params.id)).then(function (res) {
+    this.axios.get("https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/".concat(this.$route.params.id)).then(function (res) {
       _this.product = res.data;
     });
   },
@@ -5560,7 +5560,7 @@ __webpack_require__.r(__webpack_exports__);
     updateProduct: function updateProduct() {
       var _this2 = this;
 
-      this.axios.patch("https://fierce-fortress-91957.herokuapp.com/api/products/".concat(this.$route.params.id), this.product).then(function (res) {
+      this.axios.patch("https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/".concat(this.$route.params.id), this.product).then(function (res) {
         _this2.$router.push({
           name: 'home'
         });
