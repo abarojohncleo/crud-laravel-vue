@@ -37,7 +37,7 @@
         },
         created() {
             this.axios
-                .get('https://fierce-fortress-91957.herokuapp.com/api/products')
+                .get('https://crud-laravel-vue-john-abaro.herokuapp.com/api/products')
                 .then(response => {
                     this.products = response.data;
                 });
@@ -45,7 +45,7 @@
         methods: {
             deleteProduct(id) { 
                 this.axios
-                    .delete(`https://fierce-fortress-91957.herokuapp.com/api/products/${id}`)
+                    .delete(`https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/${id}`)
                     .then(response => {
                         let i = this.products.map(data => data.id).indexOf(id);
                         this.products.splice(i, 1)

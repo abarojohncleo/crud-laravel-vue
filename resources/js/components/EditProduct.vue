@@ -28,7 +28,7 @@
         },
         created() {
             this.axios
-                .get(`https://fierce-fortress-91957.herokuapp.com/api/products/${this.$route.params.id}`)
+                .get(`https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/${this.$route.params.id}`)
                 .then((res) => {
                     this.product = res.data;
                 });
@@ -36,7 +36,7 @@
         methods: {
             updateProduct() {
                 this.axios
-                    .patch(`https://fierce-fortress-91957.herokuapp.com/api/products/${this.$route.params.id}`, this.product)
+                    .patch(`https://crud-laravel-vue-john-abaro.herokuapp.com/api/products/${this.$route.params.id}`, this.product)
                     .then((res) => {
                         this.$router.push({ name: 'home' });
                     });
